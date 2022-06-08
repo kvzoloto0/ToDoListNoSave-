@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>My To-Do List!</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous"> 
+</head>
+  <body>
+
+<!--
+<form action="/items" method="post">
+    <label for="description">Add a new item</label>
+    <input id="description" name="description" type="text">
+    <button type="submit">Submit</button>
+</form>
+-->
+
+<!--
+              <div class="form">      
+                <label for="description">Add a new item</label>
+                <div class="linesSignIn"></div>
+                <a href="registration.html" class="SignInPrivacyNotice"> Registration? </a>
+
+              </div>
+
+-->
+
+
+
+<div id="range5">
+    <div class="outer">
+      <div class="middle">
+        <div class="inner">
+            <div class="login-wr">
+                <form action="/items" method="post">
+                    <label for="description" class="AddNewItem">Add a new item</label>
+                    <input id="description" name="description" type="text">
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+
+
+
+
+
+
+    <style>
+
+.AddNewItem{
+    font-weight: 200;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    color: #eee;
+}
+
+html, body {
+    height : 100%;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+}
+
+.outer {
+    display: table;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+}
+.middle {
+    display: table-cell;
+    vertical-align: middle;
+}
+.inner {
+    text-align: center;
+    width: auto;
+    padding: 0 15px;
+}
+
+#range5 {
+    background: rgba(77, 56, 75, 1);
+    background: -moz-linear-gradient(left, rgba(77, 56, 75, 1) 0%, rgba(36, 54, 90, 1) 100%);
+    background: -webkit-gradient(left top, right top, color-stop(0%, rgba(77, 56, 75, 1)), color-stop(100%, rgba(36, 54, 90, 1)));
+    background: -webkit-linear-gradient(left, rgba(77, 56, 75, 1) 0%, rgba(36, 54, 90, 1) 100%);
+    background: -o-linear-gradient(left, rgba(77, 56, 75, 1) 0%, rgba(36, 54, 90, 1) 100%);
+    background: -ms-linear-gradient(left, rgba(77, 56, 75, 1) 0%, rgba(36, 54, 90, 1) 100%);
+    background: linear-gradient(to right, rgba(77, 56, 75, 1) 0%, rgba(36, 54, 90, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4d384b', endColorstr='#24365a', GradientType=1 );
+    height: 100%;
+    min-height: 400px; 
+}
+
+#range5 .login-wr {
+    position: relative;
+    margin: 0 auto;
+    max-width: 270px;
+    padding: 0 15px 0 15px;
+}
+
+#range5 h2 {
+    font-weight: 200;
+    font-size: 1.6em;
+    margin: 0;
+    padding: 0;
+    color: #eee;
+}
+
+#range5 .form {
+    padding-top: 20px;
+    text-align: center;
+}
+
+#range5 input[type="text"], 
+#range5 input[type="password"],
+#range5 button {
+    margin-bottom: 25px;
+    height: 40px;
+    outline: 0;
+    -moz-outline-style: none;
+}
+      
+#range5 input[type="text"] {
+    background: url(LoginIMG/user2.png) no-repeat left 10px center;    
+}
+
+#range5 input[type="password"] {
+    background: url(LoginIMG/pencil2.png) no-repeat left 10px center;    
+}
+
+#range5 input[type="mail"] {
+    background: url(LoginIMG/pencil2.png) no-repeat left 10px center; 
+}
+
+#range5 input[type="text"],
+#range5 input[type="password"] {
+    width: calc(80% - 50px);
+    border: none;
+    border-bottom: 1px solid #666;
+    padding: 0 0 0 50px;
+    font-size: 14px;
+}
+
+#range5 input[type="text"]:focus,
+#range5 input[type="password"]:focus {
+    border-bottom: 1px solid #ccc;
+    color: #eee;
+}  
+
+    
+#range5 a {
+    text-align: center;
+    font-size: 12px;
+    color: #eee;
+}  
+
+#range5 p{
+    padding-bottom: 10px;
+}
+      
+#range5 button {
+    width: 80%;  
+    background: none;
+    border:none;
+    border: 1px solid #666;
+    color: white;
+    font-size: 18px;
+    font-weight: 200;
+    cursor: pointer;
+    transition: box-shadow .4s ease;
+}
+
+#range5*::-webkit-input-placeholder {
+    color: #ccc;
+}
+
+#range5 *:-moz-placeholder {
+    color: #ccc;
+}
+
+#range5 *::-moz-placeholder {
+    color: #ccc;
+}
+
+#range5 *:-ms-input-placeholder {
+    color: #ccc; 
+}
+
+.buttonSignIn:hover{
+    background: #eee!important;
+    color: black!important;
+}
+
+#textRegistration {
+    text-decoration: none;
+    width: 125px!important;
+    font-size: 15px!important;
+    color: #666!important;
+    border: none!important;
+}
+
+.linesSignIn {
+    width: 225px!important;
+    height: 2px;
+    margin: 20px 0px 20px 25px;
+    background: rgba(255,255,255,.2);
+}
+
+#mail{
+    background: url(LoginIMG/mail.png) no-repeat left 10px center!important; 
+}
+
+.ColorInputRegistration{
+    color: #eee;
+}
+
+/*start checbocks under the form with the price*/
+.radioLognInBlock{
+    padding: 33px 0px 0px 0px;
+    display: flex;
+    z-index: 7;
+}
+
+.radioLognInBlock > .radioLognIn {
+  grid-column: 1 / 1;
+  overflow: hidden;
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 20px;
+  font: inherit;
+  letter-spacing: unset;
+  word-spacing: unset;
+  line-height: 1;
+  text-shadow: none;
+  text-align: unset;
+  writing-mode: unset;
+  text-rendering: unset;
+  text-indent: 0;
+  color: inherit;
+  text-transform: none;
+  background-color: unset;
+  padding: 0;
+  border: 1px solid #626663;
+  border-radius: 4px;
+  box-sizing: unset;
+  box-shadow: none;
+  outline: none;
+  margin: 0;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+  background: #f0f0f0;
+  -webkit-transform: skew(-20deg);
+}
+
+#radioLognInBlockSupport{
+    -webkit-transform: skew(20deg);
+    padding: 20px 35px;
+    color: #404044;
+}
+
+.radioLognInBlock > input:nth-of-type(2) {
+  border-radius: 10px;
+}
+
+.radioLognInBlock > input::after {
+  content: "";
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+
+.radioLognInBlock > input:first-child::after {
+  width: 10px;
+  height: 18px;
+  border-right: 3px solid #ff2844;
+  border-bottom: 3px solid #ff2844;
+  box-sizing: border-box;
+  margin-top: -3px;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.radioLognInBlock > input:nth-of-type(2)::after {
+  --color: black;
+  --width: 70px;
+  --height: 50px;
+  --thick: 9px;
+  --radius: 10px; 
+  height: var(--height);
+  width: var(--width);
+  border-bottom-left-radius: var(--radius);
+  background: 
+      radial-gradient(farthest-side at top right, transparent 97%, var(--color) 100%) bottom calc(var(--thick) - 0.5px) left calc(var(--thick) - 0.5px) / calc(var(--thick) * 0.8) calc(var(--thick) * 0.8), 
+      radial-gradient(farthest-side, var(--color) 99%, transparent 100%) top left / var(--thick) var(--thick), 
+      radial-gradient(farthest-side, var(--color) 99%, transparent 100%) bottom right / var(--thick) var(--thick), 
+      linear-gradient(var(--color), var(--color)) left bottom / var(--thick) calc(100% - var(--thick) / 2), 
+      linear-gradient(var(--color), var(--color)) left bottom/calc(100% - var(--thick) / 2) var(--thick);
+  background-repeat: no-repeat;
+  margin-top: -4px;
+  transform: translate(-50%, -50%) rotate(-45deg) scale(0.4);
+}
+
+.radioLognInBlock > input:checked::after {
+  display: block;
+}
+
+.PrivacyNoticeRadio{
+    text-decoration: underline;
+    font-size: 13px;
+}
+
+.textIHaveReadThePrivacyNotice{
+    font-size: 13px;
+    margin-left: 10px;
+    color: #f0f0f0;
+    -webkit-transform: skew(-20deg);
+}
+
+#textIHaveReadThePrivacyNoticeSupport{
+    color: #666;
+}
+/*end checbocks under the form with the price*/
+
+.SignInPrivacyNotice{
+    font-size: 12px!important; 
+    text-decoration: underline;
+    width: 205px!important;
+    border: none!important;
+    opacity: 0.8;
+}
+    </style>
+
+
+
+
+
+  </body>
+</html>
